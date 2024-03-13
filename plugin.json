@@ -1,10 +1,10 @@
 {
-    "name": "My plugin",
+    "name": "Claude AI",
     "version": "0.0.1",
-    "description": "Description of my_plugin.",
-    "author_name": "Me",
-    "author_url": "https://mywebsite.me",
-    "plugin_url": "https://github.com/my_name/my_plugin",
-    "tags": "cat, template, example",
+    "description": "Use Claude AI api.",
+    "author_name": "momysnow",
+    "author_url": "https://github.com/momysnow",
+    "plugin_url": "https://github.com/momysnow/claude",
+    "tags": "claude, claudeai, claude ai, api, claude api",
     "thumb": "https://raw.githubusercontent.com/my_repo_path/my_plugin.png"
 }
