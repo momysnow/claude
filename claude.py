@@ -8,7 +8,7 @@ from datetime import datetime, date
 
 from cat.factory.llm import LLMSettings
 
-from langchain_anthropic import ChatAnthropic  # Importa la classe ChatAnthropic
+from langchain_anthropic import ChatAnthropic
 
 class ClaudeConfig(LLMSettings):
     """La configurazione per il plugin Claude."""
@@ -17,7 +17,7 @@ class ClaudeConfig(LLMSettings):
 
     model: str = "claude-3-opus-20240229"  # Specifica la versione di Claude
 
-    max_tokens: Optional[int] = None  # Claude determina automaticamente il numero di token
+    max_tokens: Optional[int] = 4000
 
     temperature: float = 0.7
 
