@@ -25,10 +25,6 @@ class ClaudeConfig(LLMSettings):
         }
     )
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.llm = ChatAnthropic(temperature=self.temperature, anthropic_api_key=self.anthropic_api_key)
-
 @hook
 def factory_allowed_llms(allowed, cat) -> List:
     allowed.append(ClaudeConfig)
