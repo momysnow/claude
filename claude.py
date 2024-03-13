@@ -23,7 +23,7 @@ class ClaudeConfig(LLMSettings):
 
     streaming: bool = True  # Claude supporta lo streaming
 
-    _pyclass: Type = ChatAnthropic  # Usa la classe ChatAnthropic di langchain_anthropic
+    _pyclass: Type = ChatAnthropic(temperature, anthropic_api_key)  # Usa la classe ChatAnthropic di langchain_anthropic
 
     model_config = ConfigDict(
         json_schema_extra={
