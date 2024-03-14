@@ -7,7 +7,7 @@ from cat.factory.llm import LLMSettings
 from langchain_anthropic import ChatAnthropic
 
 class ClaudeConfig(LLMSettings):
-    """La configurazione per il plugin Claude."""
+    """Setup for the Claude plugin."""
 
     anthropic_api_key: Optional[SecretStr]
     model: str = "claude-3-opus-20240229"
@@ -20,7 +20,7 @@ class ClaudeConfig(LLMSettings):
     model_config = ConfigDict(
         json_schema_extra={
             "humanReadableName": "Claude",
-            "description": "Configurazione per Claude AI di Anthropic",
+            "description": "Setup for Anthropic's Claude AI",
             "link": "https://www.anthropic.com/",
         }
     )
