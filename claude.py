@@ -11,7 +11,7 @@ class ClaudeConfig(LLMSettings):
 
     anthropic_api_key: Optional[SecretStr]
     model: str = "claude-3-opus-20240229"
-    max_tokens: Optional[int] = 4000
+    max_tokens: Optional[int] = 4096
     temperature: float = 0.7
     streaming: bool = True
 
